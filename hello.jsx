@@ -1,11 +1,18 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 
 class Hello extends Component {
-	render() {
-		return <div>
-		  <h1>Hello Freewind</h1>
-		</div>;
-	}
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'React'
+    }
+  }
+
+  render() {
+    return <div>
+      <h1>Hello {this.state.name}</h1>
+    </div>;
+  }
 }
 
 export default Hello;
